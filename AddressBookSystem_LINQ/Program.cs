@@ -13,7 +13,7 @@ namespace AddressBookSystem_LINQ
            // dataTable.Display();
             while (true)
             {
-                Console.WriteLine("\n<----Enter Choice---->  \n1. Add Contact \n2. Display \n3. Edit Contact  \n4. Delete Contact \n5. Contact_From_City \n6. Contact_From_State \n7. Count By City Or State \n8. Sort_Contacts \n9. Exit ");
+                Console.WriteLine("\n<----Enter Choice---->  \n1. Add Contact \n2. Display \n3. Edit Contact  \n4. Delete Contact \n5. Contact_From_City \n6. Contact_From_State \n7. Count By City Or State \n8. Sort_Contacts \n9. Exit  ");
                 int choise = Convert.ToInt32(Console.ReadLine());
                 try
                 {

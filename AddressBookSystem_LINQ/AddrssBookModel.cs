@@ -14,5 +14,7 @@ namespace AddressBookSystem_LINQ
         public string Zip { get; set; }
         public string Phone_Number { get; set; }
         public string Email { get; set; }
+        public string BookName { get; set; }
+        public string BookType { get; set; }
     }
 }

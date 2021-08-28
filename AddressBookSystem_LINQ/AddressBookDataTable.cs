@@ -27,13 +27,18 @@ namespace AddressBookSystem_LINQ
             dataTable.Columns.Add(taleColumn7);
             var taleColumn8 = new DataColumn("Email");
             dataTable.Columns.Add(taleColumn8);
+            var tableColumn9 = new DataColumn("BookName");
+            dataTable.Columns.Add(tableColumn9);
+            var tableColumn10 = new DataColumn("BookType");
+            dataTable.Columns.Add(tableColumn10);
 
-            dataTable.Rows.Add("Milind", "Dhote", "ShivajiChoak", "Beed", "Maha", "123456", "1478523690", "md@gmail.com");
-            dataTable.Rows.Add("Imran", "Shaikh", "Dighi", "Mumbai", "Maha", "415263", "3216547890", "imr@gmail.com");
-            dataTable.Rows.Add("Dipak", "Nagargoje", "Golai", "Latur", "Maha", "415789", "9632154870", "dipak@gmail.com");
-            dataTable.Rows.Add("Mahesh", "Kande", "DangeChoak", "Pune", "Maha", "789456", "8529631470", "mk@gmail.com");
-            dataTable.Rows.Add("Vishal", "Karad", "AoneStreet", "Banglore", "Karanataka", "569874", "8963254170", "vish@gmail.com");
-            dataTable.Rows.Add("Ganesh", "Jadhav", "firsStreet", "Chennai", "Tamil", "526341", "8974563210", "gan@gmail.com");
+            dataTable.Rows.Add("Milind", "Dhote", "ShivajiChoak", "Beed", "Maha", "123456", "1478523690", "md@gmail.com", "address001", "family");
+            dataTable.Rows.Add("Imran", "Shaikh", "Dighi", "Mumbai", "Maha", "415263", "3216547890", "imr@gmail.com", "address001", "family");
+            dataTable.Rows.Add("Dipak", "Nagargoje", "Golai", "Latur", "Maha", "415789", "9632154870", "dipak@gmail.com", "address002", "friend");
+            dataTable.Rows.Add("Mahesh", "Kande", "DangeChoak", "Pune", "Maha", "789456", "8529631470", "mk@gmail.com", "address003", "office");
+            dataTable.Rows.Add("Vishal", "Karad", "AoneStreet", "Banglore", "Karanataka", "569874", "8963254170", "vish@gmail.com", "address003", "office");
+            dataTable.Rows.Add("Ganesh", "Jadhav", "firsStreet", "Chennai", "Tamil", "526341", "8974563210", "gan@gmail.com", "address003", "friend");
+            dataTable.Rows.Add("Mahesha", "Jadhav", "golai", "Latur", "Maha", "526341", "8974563210", "gan@gmail.com", "address003", "friend");
             return dataTable;
         }
         public void AddContact(AddrssBookModel model)
@@ -55,6 +60,8 @@ namespace AddressBookSystem_LINQ
                 recordData.SetField("Zip", model.Zip);
                 recordData.SetField("Phone_Number", model.Phone_Number);
                 recordData.SetField("Email", model.Email);
+                recordData.SetField("Book_Name", model.BookName);
+                recordData.SetField("Book_Type", model.BookType);
             }
         }
         public void DeleteContact(AddrssBookModel model)
@@ -79,6 +86,8 @@ namespace AddressBookSystem_LINQ
                 Console.WriteLine("ZipCode: " + table.Field<string>("Zip"));
                 Console.WriteLine("PhoneNumber: " + table.Field<string>("Phone_Number"));
                 Console.WriteLine("E-mail: " + table.Field<string>("Email"));
+                Console.WriteLine("Book_Name: " + table.Field<string>("BookName"));
+                Console.WriteLine("Book_Type: " + table.Field<string>("BookType"));
             }
         }
 
@@ -95,6 +104,8 @@ namespace AddressBookSystem_LINQ
                 Console.WriteLine("ZipCode: " + table.Field<string>("Zip"));
                 Console.WriteLine("PhoneNumber: " + table.Field<string>("Phone_Number"));
                 Console.WriteLine("E-mail: " + table.Field<string>("Email"));
+                Console.WriteLine("Book_Name: " + table.Field<string>("BookName"));
+                Console.WriteLine("Book_Type: " + table.Field<string>("BookType"));
             }
         }
 
@@ -110,6 +121,8 @@ namespace AddressBookSystem_LINQ
                 Console.WriteLine("ZipCode: " + table.Field<string>("Zip"));
                 Console.WriteLine("PhoneNumber: " + table.Field<string>("Phone_Number"));
                 Console.WriteLine("E-mail: " + table.Field<string>("Email"));
+                Console.WriteLine("Book_Name: " + table.Field<string>("BookName"));
+                Console.WriteLine("Book_Type: " + table.Field<string>("BookType"));
             }
         }
         public void CountByCityAndState()
@@ -140,6 +153,8 @@ namespace AddressBookSystem_LINQ
                 Console.WriteLine("ZipCode: " + table.Field<string>("Zip"));
                 Console.WriteLine("PhoneNumber: " + table.Field<string>("Phone_Number"));
                 Console.WriteLine("E-mail: " + table.Field<string>("Email"));
+                Console.WriteLine("Book_Name: " + table.Field<string>("BookName"));
+                Console.WriteLine("Book_Type: " + table.Field<string>("BookType"));
             }
         }
     }
