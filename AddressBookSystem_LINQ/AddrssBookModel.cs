@@ -16,5 +16,6 @@ namespace AddressBookSystem_LINQ
         public string Email { get; set; }
         public string BookName { get; set; }
         public string BookType { get; set; }
+
     }
 }

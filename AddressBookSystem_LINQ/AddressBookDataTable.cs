@@ -170,5 +170,6 @@ namespace AddressBookSystem_LINQ
                 Console.WriteLine("AddressBook Type =" + contactlist.BookType + " --> " + "AddressBook_Count = " + contactlist.BookTypeCount);
             }
         }
+
     }
 }
